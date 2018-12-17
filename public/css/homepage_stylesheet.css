@@ -1,0 +1,104 @@
+body {overflow-x:hidden;}
+.background_transitions {
+	-moz-transition:background-color .2s ease-in-out;
+	-webkit-transition:background-color .2s ease-in-out;
+	-ms-transition:background-color .2s ease-in-out;
+	transition:background-color .2s ease-in-out;
+}
+
+.transitions {
+	-moz-transition:color .2s ease-in-out;
+	-webkit-transition:color .2s ease-in-out;
+	-ms-transition:color .2s ease-in-out;
+	transition:color .2s ease-in-out;
+}
+
+nav {
+	display:inline-flex;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:60px;
+	align-items:center;
+	justify-content:space-around;
+	background-color:#392DA3;
+	z-index:100000;
+}
+	
+	.logo {width:50px;}
+	
+	input[type=search] {
+		width:25vw;
+		height:35px;
+		font-size:14px;
+		font-style:italic;
+		border:none;
+		border-radius:8px;
+		padding-left:20px;
+		box-sizing:border-box;
+	}
+	
+	ul.actions {
+		display:inline-flex;
+		width:20%;
+		list-style:none;
+		justify-content:space-between;
+		font-size:18px;
+		color:#FFFFFF;
+	}
+	
+	li.navbar_gateway {
+		display:flex;
+		flex-direction:column;
+		width:20%;
+		height:35px;
+		align-items:center;
+		justify-content:center;
+		border-radius:8px;
+		cursor:pointer;
+	}
+		
+	li.navbar_gateway:hover {background-color:#686DD1;}
+	
+		a.navbar_link {
+			text-decoration:none;
+			color:#FFFFFF;
+		}
+		
+	#dropdown_menu {
+		position:absolute;
+		top:0;
+		right:0;
+		display:none;
+		flex-direction:column;
+		width:25%;
+		height:auto;
+		margin-top:61px;
+		border-right:1px solid #FFFFFF;
+		box-sizing:border-box;
+		color:#FFFFFF;
+		background-color:#392DA3;
+	}
+	
+		ul.dropdown {width:100%; list-style:none; margin-top:0; margin-left:-40px; margin-bottom:0;}
+		li.dropdown_gateway {width:100%; padding:10px 0 10px 15px;}
+		li.dropdown_gateway:not(:last-child) {border-bottom:1px solid #FFFFFF;}
+		li.dropdown_gateway:hover {background-color:#686DD1;}
+		a.dropdown_actions {text-decoration:none; color:#FFFFFF;}
+		
+		li.profile_gateway {
+			display:flex;
+			flex-direction:column;
+			text-align:center;
+			border-bottom:1px solid #FFFFFF;
+		}
+			
+			p.username {margin:0.5em; font-size:22px;}
+			p.job {margin-top:0.1em; font-size:14px;}
+			a.show_profile {text-decoration:none; color:#E2E2E2;}
+			a.show_profile:hover {color:#FFFFFF;}
+			
+			.xlarge{font-size:24px!important}
+			.xxlarge{font-size:36px!important}
+			.xxxlarge{font-size:48px!important}
